@@ -1,4 +1,4 @@
-# CVIPS: Collaborative Vision for Increased Pedestrian Safety
+# CVIPS: Connected Vision for Increased Pedestrian Safety
 
 Implementation of the paper "Impact of Latency and Bandwidth Limitations on the Safety Performance of Collaborative Perception" (2024 IEEE International Conference on Computer Communications and Networks (ICCN)).
 
