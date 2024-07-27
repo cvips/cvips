@@ -17,13 +17,13 @@ The official implementation of the paper [DeepAccident: A Motion and Accident Pr
 
 [//]: # (| [**DeepAccident-Small**]&#40;configs/bevdet4d/bevdet4d-sttiny.py&#41; | 35.2 | 49.5 | 51.7 | 40.9 | 36.1 | [Google Drive]&#40;https://drive.google.com/file/d/1n0teAat6Qy_EeJdDfWcwm0x8FZ2wsAo9/view?usp=sharing&#41;)
 
-## Installation
+## Dataset Download
 Please check [installation](docs/installation.md) for installation and [data_preparation](docs/data_preparation.md) for preparing the nuScenes dataset.
 
 ## Getting Started
 Please check [getting_started](docs/getting_started.md) for training, evaluation, and visualization of DeepAccident.
 
-## Motion & Accident prediction from Multi-View Images
+## Dateset Generation Setup
 ![visualization](figs/First_video.gif "Task Visualization")
 
 ## V2XFormer for perception & prediction
@@ -35,11 +35,6 @@ This project is mainly based on the following open-sourced projects: [BEVerse](h
 ## Bibtex
 If this work is helpful for your research, please consider citing the following BibTeX entry.
 ```
-@article{Wang_2023_DeepAccident,
-  title = {DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving},
-  author = {Wang, Tianqi and Kim, Sukmin and Ji, Wenxuan and Xie, Enze and Ge, Chongjian and Chen, Junsong and Li, Zhenguo and Ping, Luo},
-  journal = {arXiv preprint arXiv:2304.01168},
-  year = {2023}
-}
+
 ```
 
