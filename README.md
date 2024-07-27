@@ -1,40 +1,48 @@
-# CVIPS
+# CVIPS: Collaborative Vision for Increased Pedestrian Safety
 
+Implementation of the paper "Impact of Latency and Bandwidth Limitations on the Safety Performance of Collaborative Perception" (2024 IEEE International Conference on Computer Communications and Networks (ICCN)).
 
-The official implementation of the paper [DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving]("https://arxiv.org/pdf/2304.01168).
- 
-[//]: # (## News)
+## Dataset
 
-[//]: # (* **2022.07.20:** We release the code and models of DeepAccident.)
+The CVIPS dataset is available [here](https://drive.google.com/drive/folders/1gCCrIslzVkupyF0lj_1I9qXTB2_a4tjd?usp=drive_link).
 
-[//]: # (## Model Zoo)
+## Installation and Data Preparation
 
-[//]: # (|Method | mAP      | NDS     | IoU &#40;Map&#41; | IoU &#40;Motion&#41; | VPQ | Model |)
-
-[//]: # (|:--------:|:----------:|:---------:|:--------:|:-------------:|:-----:|:-------:|)
-
-[//]: # (| [**CVIPS dataset**]&#40;configs/bevdet/bevdet-sttiny.py&#41;       | 32.1 | 46.6 | 48.7 | 38.7 | 33.3 | [Google Drive]&#40;https://drive.google.com/file/d/1S2o8v6YFkeHMuJIpw-SWNDGySacH1xCV/view?usp=sharing&#41;)
-
-[//]: # (| [**DeepAccident-Small**]&#40;configs/bevdet4d/bevdet4d-sttiny.py&#41; | 35.2 | 49.5 | 51.7 | 40.9 | 36.1 | [Google Drive]&#40;https://drive.google.com/file/d/1n0teAat6Qy_EeJdDfWcwm0x8FZ2wsAo9/view?usp=sharing&#41;)
-
-## Dataset Download
-Please check [installation](docs/installation.md) for installation and [data_preparation](docs/data_preparation.md) for preparing the nuScenes dataset.
+Please check [installation](docs/installation.md) for setup instructions and [data_preparation](docs/data_preparation.md) for preparing the dataset.
 
 ## Getting Started
-Please check [getting_started](docs/getting_started.md) for training, evaluation, and visualization of DeepAccident.
 
-## Dateset Generation Setup
-![visualization](figs/First_video.gif "Task Visualization")
+Refer to [getting_started](docs/getting_started.md) for training, evaluation, and visualization of the CVIPS model.
 
-## V2XFormer for pedestrian detection
-![visualization](figs/V2XFormer.jpg "V2XFormer")
+## Dataset Generation Setup
+
+![Dataset Generation](figs/First_video.gif "Dataset Generation Visualization")
+
+Our dataset is generated using the CARLA simulator, providing diverse scenarios for collaborative perception.
+
+## V2XFormer for Pedestrian Detection
+
+![V2XFormer Architecture](figs/V2XFormer.jpg "V2XFormer Architecture")
+
+We utilize a modified V2XFormer architecture for pedestrian detection in collaborative scenarios.
+
+## Results
+
+(You can add a brief summary of your key results here)
 
 ## Acknowledgement
-This project is mainly based on the following open-sourced projects: [BEVerse](https://github.com/zhangyp15/BEVerse), [Fiery](https://github.com/wayveai/fiery), [open-mmlab](https://github.com/open-mmlab).
 
-## Bibtex
-If this work is helpful for your research, please consider citing the following BibTeX entry.
-```
+This project is based on the following open-source projects: [BEVerse](https://github.com/zhangyp15/BEVerse), [Fiery](https://github.com/wayveai/fiery), [open-mmlab](https://github.com/open-mmlab), and [DeepAccident](https://arxiv.org/pdf/2304.01168).
 
-```
+## Citation
 
+If you find this work helpful for your research, please consider citing:
+
+```bibtex
+@inproceedings{shenkut2024impact,
+  title={Impact of Latency and Bandwidth Limitations on the Safety Performance of Collaborative Perception},
+  author={Shenkut, D. and Kumar, B.V.K.},
+  booktitle={2024 IEEE International Conference on Computer Communications and Networks (ICCN)},
+  year={2024},
+  organization={IEEE}
+}
