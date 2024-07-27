@@ -13,7 +13,7 @@ The official implementation of the paper [DeepAccident: A Motion and Accident Pr
 
 [//]: # (|:--------:|:----------:|:---------:|:--------:|:-------------:|:-----:|:-------:|)
 
-[//]: # (| [**DeepAccident-Tiny**]&#40;configs/bevdet/bevdet-sttiny.py&#41;       | 32.1 | 46.6 | 48.7 | 38.7 | 33.3 | [Google Drive]&#40;https://drive.google.com/file/d/1S2o8v6YFkeHMuJIpw-SWNDGySacH1xCV/view?usp=sharing&#41;)
+[//]: # (| [**CVIPS dataset**]&#40;configs/bevdet/bevdet-sttiny.py&#41;       | 32.1 | 46.6 | 48.7 | 38.7 | 33.3 | [Google Drive]&#40;https://drive.google.com/file/d/1S2o8v6YFkeHMuJIpw-SWNDGySacH1xCV/view?usp=sharing&#41;)
 
 [//]: # (| [**DeepAccident-Small**]&#40;configs/bevdet4d/bevdet4d-sttiny.py&#41; | 35.2 | 49.5 | 51.7 | 40.9 | 36.1 | [Google Drive]&#40;https://drive.google.com/file/d/1n0teAat6Qy_EeJdDfWcwm0x8FZ2wsAo9/view?usp=sharing&#41;)
 
