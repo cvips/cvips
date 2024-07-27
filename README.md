@@ -26,7 +26,7 @@ Please check [getting_started](docs/getting_started.md) for training, evaluation
 ## Dateset Generation Setup
 ![visualization](figs/First_video.gif "Task Visualization")
 
-## V2XFormer for perception & prediction
+## V2XFormer for pedestrian detection
 ![visualization](figs/V2XFormer.jpg "V2XFormer")
 
 ## Acknowledgement
