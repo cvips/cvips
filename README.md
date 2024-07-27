@@ -1,4 +1,5 @@
-# DeepAccident
+# CVIPS
+
 
 The official implementation of the paper [DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving]("https://arxiv.org/pdf/2304.01168).
  
