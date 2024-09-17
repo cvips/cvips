@@ -8,26 +8,7 @@ Implementation of the CVIPS project.
 ## Dataset
 The CVIPS dataset is available [here](https://drive.google.com/drive/folders/1gCCrIslzVkupyF0lj_1I9qXTB2_a4tjd?usp=drive_link).
 
-### Sample Visualizations
 
-We provide visualizations to demonstrate different perspectives in our dataset:
-(this can be done using [Code/data_viz.py](Code\data_viz.py))
-1. **Infrastructure View** (6 cameras)
-   ![Infrastructure View](images/output_video_infra2_6cam.gif)
-   This visualization shows the scene from fixed infrastructure cameras, providing a comprehensive view of the intersection from multiple angles.
-
-2. **Vehicle View** (6 cameras)
-   ![Vehicle View](images/output_video_veh1_6cam.gif)
-   This visualization demonstrates the perspective from a moving vehicle, showcasing the view from various angles around the vehicle.
-
-3. **Collaborative View** (4 cameras)
-   ![Collaborative View](images/output_video_VVVI_4cam.gif)
-   This visualization combines views from both vehicles and infrastructure, illustrating the collaborative perception aspect of our dataset.
-
-These visualizations demonstrate:
-- Multiple camera perspectives (infrastructure, vehicle-mounted, and collaborative)
-- Various weather conditions and times of day
-- Diverse traffic scenarios with multiple vehicles and pedestrians
 
 
 
@@ -91,6 +72,28 @@ Here are some example commands to generate different scenarios:
    ```
 
 These examples demonstrate various combinations of towns, intersection types, weather conditions, times of day, and camera setups. Users can modify these parameters to generate different scenarios as needed.
+
+### Sample Visualizations
+
+We provide visualizations to demonstrate different perspectives in our dataset:
+(this can be done using [Code/data_viz.py](Code\data_viz.py))
+1. **Infrastructure View** (6 cameras)
+   ![Infrastructure View](images/output_video_infra2_6cam.gif)
+   This visualization shows the scene from fixed infrastructure cameras, providing a comprehensive view of the intersection from multiple angles.
+
+2. **Vehicle View** (6 cameras)
+   ![Vehicle View](images/output_video_veh1_6cam.gif)
+   This visualization demonstrates the perspective from a moving vehicle, showcasing the view from various angles around the vehicle.
+
+3. **Collaborative View** (4 cameras)
+   ![Collaborative View](images/output_video_VVVI_4cam.gif)
+   This visualization combines views from both vehicles and infrastructure, illustrating the collaborative perception aspect of our dataset.
+
+
+- Multiple camera perspectives (infrastructure, vehicle-mounted, and collaborative)
+- Various weather conditions and times of day ()
+- Diverse traffic scenarios with multiple vehicles and pedestrians setup (controlled by seeds, number of pedestrians, number of vehicles to be spawned)
+
 
 
 ## For Detection in collaborative setup check the documentation of V2XFormer
