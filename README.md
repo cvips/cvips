@@ -8,6 +8,29 @@ Implementation of the CVIPS project.
 ## Dataset
 The CVIPS dataset is available [here](https://drive.google.com/drive/folders/1gCCrIslzVkupyF0lj_1I9qXTB2_a4tjd?usp=drive_link).
 
+### Sample Visualizations
+
+We provide visualizations to demonstrate different perspectives in our dataset:
+(this can be done using [Code/data_viz.py](Code\data_viz.py))
+1. **Infrastructure View** (6 cameras)
+   ![Infrastructure View](images/output_video_infra2_6cam.gif)
+   This visualization shows the scene from fixed infrastructure cameras, providing a comprehensive view of the intersection from multiple angles.
+
+2. **Vehicle View** (6 cameras)
+   ![Vehicle View](images/output_video_veh1_6cam.gif)
+   This visualization demonstrates the perspective from a moving vehicle, showcasing the view from various angles around the vehicle.
+
+3. **Collaborative View** (4 cameras)
+   ![Collaborative View](images/output_video_VVVI_4cam.gif)
+   This visualization combines views from both vehicles and infrastructure, illustrating the collaborative perception aspect of our dataset.
+
+These visualizations demonstrate:
+- Multiple camera perspectives (infrastructure, vehicle-mounted, and collaborative)
+- Various weather conditions and times of day
+- Diverse traffic scenarios with multiple vehicles and pedestrians
+
+
+
 ## Installation
 Please check [installation](https://carla.readthedocs.io/en/0.9.14/build_windows) on how to setup CARLA for windows
 
