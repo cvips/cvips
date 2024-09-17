@@ -1,30 +1,80 @@
 # CVIPS: Connected Vision for Increased Pedestrian Safety
 Implementation of the CVIPS project.
-- [ ] Dataset
-- [ ] CARLA data generation code
-- [ ] Method Implementation
+- [X] Dataset
+- [X] CARLA data generation code
 
-Paper: "Impact of Latency and Bandwidth Limitations on the Safety Performance of Collaborative Perception" (2024 IEEE International Conference on Computer Communications and Networks (ICCN)).
+
 
 ## Dataset
 The CVIPS dataset is available [here](https://drive.google.com/drive/folders/1gCCrIslzVkupyF0lj_1I9qXTB2_a4tjd?usp=drive_link).
 
-## Installation and Data Preparation
-Please check [installation](docs/installation.md) for setup instructions and [data_preparation](docs/data_preparation.md) for preparing the dataset.
+## Installation
+Please check [installation](https://carla.readthedocs.io/en/0.9.14/build_windows) on how to setup CARLA for windows
 
-## Getting Started
-Refer to [getting_started](docs/getting_started.md) for training, evaluation, and visualization of the CVIPS model.
 
-## Dataset Generation Setup
-![Dataset Generation](figs/First_video.gif "Dataset Generation Visualization")
+
+## Dataset Generation
 Our dataset is generated using the CARLA simulator, providing diverse scenarios for collaborative perception.
 
-## V2XFormer for Pedestrian Detection
-![V2XFormer Architecture](figs/V2XFormer.jpg "V2XFormer Architecture")
-We utilize a modified V2XFormer architecture for pedestrian detection in collaborative scenarios.
+### Running the Data Generation Script
 
-## Results
-(You can add a brief summary of your key results here)
+1. Clone the repository:
+   ```
+   git clone https://github.com/cvips/CVIPS.git
+   cd CVIPS
+   ```
+
+2. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Ensure CARLA is properly installed and running. Start the CARLA server in a separate terminal:
+   ```
+   /path/to/carla/CarlaUE4.exe
+   ```
+
+4. Run the data generation script:
+   ```
+   python cvips_generation.py
+   ```
+
+   This script will connect to the CARLA server and generate the dataset based on the specified parameters.
+
+Note: Make sure to adjust the CARLA server path and any configuration parameters in `cvips_generation.py` as needed for your specific setup.
+
+### Sample Examples
+
+Here are some example commands to generate different scenarios:
+
+1. Four-way intersection in Town10HD with clear weather at noon:
+   ```
+   python cvips_generation.py --town Town10HD --intersection 4way --setup wsee --weather clear --time_of_the_day noon --crowd_level medium --crossing_percentage 0.1 --seed_value 23 --scenario scenario00001
+   ```
+
+2. Four-way intersection in Town04 with rainy weather at sunset:
+   ```
+   python cvips_generation.py --town Town04 --intersection 4way --setup wwss --weather rainy --time_of_the_day sunset --crowd_level medium --crossing_percentage 0.1 --seed_value 42 --scenario scenario00002
+   ```
+
+3. Three-way intersection in Town05 with clear weather at night:
+   ```
+   python cvips_generation.py --town Town05 --intersection 3way --setup wwss --weather clear --time_of_the_day night --crowd_level medium --crossing_percentage 0.1 --seed_value 73 --scenario scenario00005
+   ```
+
+4. Four-way intersection in Town10HD with cloudy weather at noon:
+   ```
+   python cvips_generation.py --town Town10HD --intersection 4way --setup wwws --weather cloudy --time_of_the_day noon --crowd_level medium --crossing_percentage 0.1 --seed_value 101 --scenario scenario00011
+   ```
+
+These examples demonstrate various combinations of towns, intersection types, weather conditions, times of day, and camera setups. Users can modify these parameters to generate different scenarios as needed.
+
+
+## For Detection in collaborative setup check the documentation of V2XFormer
+First, prepare the dataset with this format [data_preparation](docs/data_preparation.md) .
+Then, use [V2XFormer](https://github.com/tianqi-wang1996/DeepAccident) according to the instructions here 
+1. [Installation](https://github.com/tianqi-wang1996/DeepAccident/blob/main/docs/installation.md)
+2. [Training and Evaluation](https://github.com/tianqi-wang1996/DeepAccident/blob/main/docs/getting_started.md) -- adjust the datapaths and number of classes accordingly
 
 ## Acknowledgement
 This project is based on the following open-source projects: [BEVerse](https://github.com/zhangyp15/BEVerse), [Fiery](https://github.com/wayveai/fiery), [open-mmlab](https://github.com/open-mmlab), and [DeepAccident](https://arxiv.org/pdf/2304.01168).
@@ -32,6 +82,8 @@ This project is based on the following open-source projects: [BEVerse](https://g
 ## Citation
 If you find this work helpful for your research, please consider citing:
 ```bibtex
+
+
 @inproceedings{shenkut2024impact,
   title={Impact of Latency and Bandwidth Limitations on the Safety Performance of Collaborative Perception},
   author={Shenkut, D. and Kumar, B.V.K.},
@@ -39,3 +91,7 @@ If you find this work helpful for your research, please consider citing:
   year={2024},
   organization={IEEE}
 }
+
+
+
+```
