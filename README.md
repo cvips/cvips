@@ -78,15 +78,15 @@ These examples demonstrate various combinations of towns, intersection types, we
 We provide visualizations to demonstrate different perspectives in our dataset:
 (this can be done using [Code/data_viz.py](Code\data_viz.py))
 1. **Infrastructure View** (6 cameras)
-   ![Infrastructure View](images/output_video_infra2_6cam.gif)
+   <img src="images/output_video_infra2_6cam.gif" alt="Infrastructure View" width="640" height="360">
    This visualization shows the scene from fixed infrastructure cameras, providing a comprehensive view of the intersection from multiple angles.
 
 2. **Vehicle View** (6 cameras)
-   ![Vehicle View](images/output_video_veh1_6cam.gif)
+   <img src="images/output_video_veh1_6cam.gif" alt="Vehicle View" width="640" height="360">
    This visualization demonstrates the perspective from a moving vehicle, showcasing the view from various angles around the vehicle.
 
 3. **Collaborative View** (4 cameras)
-   ![Collaborative View](images/output_video_VVVI_4cam.gif)
+   <img src="images/output_video_VVVI_4cam.gif" alt="Collaborative View" width="640" height="360">
    This visualization combines views from both vehicles and infrastructure, illustrating the collaborative perception aspect of our dataset.
 
 
