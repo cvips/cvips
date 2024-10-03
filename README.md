@@ -106,17 +106,7 @@ Then, use [V2XFormer](https://github.com/tianqi-wang1996/DeepAccident) according
 This project is based on the following open-source projects: [BEVerse](https://github.com/zhangyp15/BEVerse), [Fiery](https://github.com/wayveai/fiery), [open-mmlab](https://github.com/open-mmlab), and [DeepAccident](https://arxiv.org/pdf/2304.01168).
 
 ## Citation
-If you find this work helpful for your research, please consider citing:
-```bibtex
 
-
-@inproceedings{shenkut2024impact,
-  title={Impact of Latency and Bandwidth Limitations on the Safety Performance of Collaborative Perception},
-  author={Shenkut, D. and Kumar, B.V.K.},
-  booktitle={2024 IEEE International Conference on Computer Communications and Networks (ICCN)},
-  year={2024},
-  organization={IEEE}
-}
 
 
 
